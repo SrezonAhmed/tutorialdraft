@@ -15,12 +15,11 @@
 
   .navbar {
     //position: relative; //sticky maybe //KEEP IT RELATIVE
-    background-color: $white;
+    background-color: $black;
     width: 100%;
     padding: 5px;
     top: 0;
     z-index: 999;
-
 
     .navcontainer {
       @extend %align-center;
@@ -35,6 +34,8 @@
         margin-right: 15px;
         //image-resolution: normal;
         cursor: pointer;
+        align-items: center;
+        text-align: center;
       }
 
       .navmenu {
@@ -48,8 +49,13 @@
           list-style: none;
           text-align: center;
 
+          #getstarted {
+            border: 1.5px solid pink;
+            border-radius: 5px;
+          }
+
           &:hover {
-            color: $grey;
+            color: white;
             transition: all 0.1s ease-in;
           }
         }
