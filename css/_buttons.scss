@@ -1,8 +1,8 @@
 @import "colors";
 
 .btnprimary {
-  background-color: $pink;
-  border: 1.5px solid $pink;
+  background-color: $blue;
+  border: 1.5px solid $blue;
   padding: 13px 20px;
   border-radius: 5px;
   cursor: pointer;
@@ -18,21 +18,21 @@
   }
 
   &:hover {
-    border: 1.5px solid $pink;
+    border: 1.5px solid $blue;
     background: transparent;
     transition: all 0.3s;
     border-radius: 5px;
 
     .btnlink {
-      color: $pink;
+      color: $blue;
       font-weight: lighter;
     }
   }
 }
 
 .btnsecondary {
-  background-color: $grey;
-  border: 1.5px solid $grey;
+  background-color: $darkgray;
+  border: 1.5px solid $darkgray;
   padding: 10px 25px;
   border-radius: 5px;
   outline: none;
@@ -47,13 +47,13 @@
   }
 
   &:hover {
-    border: 1.5px solid $grey;
+    border: 1.5px solid $gray;
     background: transparent;
     transition: all 0.3s;
     border-radius: 5px;
 
     .btnlink {
-      color: $grey;
+      color: $gray;
       font-weight: lighter;
     }
   }

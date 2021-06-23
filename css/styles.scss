@@ -35,7 +35,7 @@ a {
 }
 
 h1 {
-  color: $pink;
+  color: $white;
 }
 
 p {
@@ -102,19 +102,13 @@ p {
       width: 50%;
       justify-content: right;
       padding-left: 45%;
-
-      .fa-hand-holding-heart {
-        justify-content: right;
-        font-size: 200px;
-        color: $pink;
-      }
     }
   }
 }
 
 //objectives
 .objectives-section {
-  background-color: $black;
+  background-color: $blue;
 
   .objectives-container {
     @extend %overallcontainer;
@@ -126,7 +120,7 @@ p {
 
       .fa-bullseye {
         font-size: 200px;
-        color: $pink;
+        color: $black;
       }
     }
     //objectives right - description
@@ -159,7 +153,7 @@ p {
 
       .fa-search {
         font-size: 200px;
-        color: $pink;
+        color: $blue;
       }
     }
   }
@@ -179,7 +173,7 @@ p {
 
       .fa-box-open {
         font-size: 190px;
-        color: $pink;
+        color: $blue;
       }
 
     }
@@ -213,7 +207,7 @@ p {
 
       .fa-comment-alt {
         font-size: 200px;
-        color: $pink;
+        color: $blue;
       }
     }
   }
@@ -269,7 +263,7 @@ p {
   //bottom: 0;
   //left: 0;
   padding: 6rem 2rem;
-  background-color: $pink;
+  background-color: $blue;
 
   display: flex;
   flex-direction: column;
@@ -298,7 +292,7 @@ p {
 }
 
 .website-rights {
-  background: $pink;
+  background: $blue;
   padding-top: 15px;
   bottom: 0;
   margin: 0;

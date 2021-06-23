@@ -15,7 +15,7 @@
 
   .navbar {
     //position: relative; //sticky maybe //KEEP IT RELATIVE
-    background-color: $black;
+    background-color: $blue;
     width: 100%;
     padding: 5px;
     top: 0;
@@ -36,12 +36,16 @@
         cursor: pointer;
         align-items: center;
         text-align: center;
+
+        h1 {
+          color: $black;
+        }
       }
 
       .navmenu {
 
         .navlinks {
-          color: $pink;
+          color: $black;
           font-size: 17px;
           font-weight: bold;
           margin-left: 12px;
@@ -49,13 +53,8 @@
           list-style: none;
           text-align: center;
 
-          #getstarted {
-            border: 1.5px solid pink;
-            border-radius: 5px;
-          }
-
           &:hover {
-            color: white;
+            color: $white;
             transition: all 0.1s ease-in;
           }
         }
