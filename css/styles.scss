@@ -11,7 +11,7 @@ html {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Mate SC', serif;
 }
 
 body {
@@ -78,7 +78,7 @@ p {
     line-height: 1.5;
     font-size: 20px;
     padding-bottom: 15px;
-    color: white;
+    color: black;
   }
 
 }
@@ -86,7 +86,7 @@ p {
 //intro
 .intro-section {
 
-  background-color: black;
+  background-color: $blue;
 
   .intro-container {
     @extend %overallcontainer;
@@ -95,6 +95,10 @@ p {
     &-left {
       justify-content: center;
       @extend %containerinfo;
+      h1, p {
+        color: black;
+        margin-bottom: 10px;
+      }
     }
 
     //intro right - image
@@ -108,7 +112,7 @@ p {
 
 //objectives
 .objectives-section {
-  background-color: $blue;
+  background-color: $white;
 
   .objectives-container {
     @extend %overallcontainer;
@@ -118,15 +122,18 @@ p {
       width: 50%;
       justify-content: right;
 
-      .fa-bullseye {
+      .fa-paper-plane {
         font-size: 200px;
-        color: $black;
+        color: $blue;
       }
     }
     //objectives right - description
     &-right {
       @extend %containerinfo;
       padding-right: 15px;
+      h1 {
+        color: black;
+      }
     }
   }
 }
@@ -143,6 +150,9 @@ p {
     &-left {
       justify-content: left;
       @extend %containerinfo;
+      h1{
+        color: $white;
+      }
     }
 
     //vision right - image
@@ -151,7 +161,7 @@ p {
       justify-content: right;
       padding-left: 45%;
 
-      .fa-search {
+      .fa-bullseye {
         font-size: 200px;
         color: $blue;
       }
@@ -159,36 +169,10 @@ p {
   }
 }
 
-//products
-.products-section {
-  background-color: $black;
-
-  .products-container {
-    @extend %overallcontainer;
-
-    //products left - image
-    &-left {
-      width: 50%;
-      justify-content: right;
-
-      .fa-box-open {
-        font-size: 190px;
-        color: $blue;
-      }
-
-    }
-    //products right - description
-    &-right {
-      @extend %containerinfo;
-      padding-right: 15px;
-    }
-  }
-}
-
 //followus
 .followus-section {
 
-  background-color: black;
+  background-color: $white;
   //overflow: visible;
 
   .followus-container {
@@ -198,12 +182,17 @@ p {
     &-left {
       justify-content: left;
       @extend %containerinfo;
+      h1 {
+        color: black;
+        margin-bottom: 10px;
+      }
     }
 
     //followus right - image
     &-right {
       width: 50%;
       justify-content: right;
+      padding-left: 45%;
 
       .fa-comment-alt {
         font-size: 200px;
@@ -213,21 +202,6 @@ p {
   }
 }
 
-//donate page
-.donate-section {
-  background-color: $white;
-
-  .donate-container {
-    width: 100%;
-    margin: 0 auto;
-    padding: 15px 33.8%;
-    align-items: center;
-    justify-items: center;
-    overflow: hidden;
-    z-index: 999;
-
-  }
-}
 
 //info page
 .info-section {
@@ -263,7 +237,7 @@ p {
   //bottom: 0;
   //left: 0;
   padding: 6rem 2rem;
-  background-color: $blue;
+  background-color: $black;
 
   display: flex;
   flex-direction: column;
@@ -283,7 +257,7 @@ p {
         font-weight: bold;
       }
       a {
-        color: $black;
+        color: $blue;
         display: block;
         align-items: center;
       }
@@ -292,7 +266,8 @@ p {
 }
 
 .website-rights {
-  background: $blue;
+  background: $black;
+  color: $blue;
   padding-top: 15px;
   bottom: 0;
   margin: 0;

@@ -1,6 +1,6 @@
 .btnprimary {
-  background-color: #29B6F6;
-  border: 1.5px solid #29B6F6;
+  background-color: black;
+  border: 1.5px solid black;
   padding: 13px 20px;
   border-radius: 5px;
   cursor: pointer;
@@ -9,25 +9,25 @@
 .btnprimary .btnlink {
   text-decoration: none;
   color: white;
-  font-size: 18px;
+  font-size: 20px;
+  font-weight: bold;
   align-items: center;
   width: 100%;
-  font-weight: lighter;
 }
 .btnprimary:hover {
-  border: 1.5px solid #29B6F6;
+  border: 1.5px solid black;
   background: transparent;
   transition: all 0.3s;
   border-radius: 5px;
 }
 .btnprimary:hover .btnlink {
-  color: #29B6F6;
-  font-weight: lighter;
+  color: black;
+  font-weight: bolder;
 }
 
 .btnsecondary {
-  background-color: #263238;
-  border: 1.5px solid #263238;
+  background-color: black;
+  border: 1.5px solid black;
   padding: 10px 25px;
   border-radius: 5px;
   outline: none;
@@ -41,13 +41,13 @@
   align-items: center;
 }
 .btnsecondary:hover {
-  border: 1.5px solid #ECEFF1;
-  background: transparent;
+  border: 1.5px solid black;
+  background: #29B6F6;
   transition: all 0.3s;
   border-radius: 5px;
 }
 .btnsecondary:hover .btnlink {
-  color: #ECEFF1;
+  color: black;
   font-weight: lighter;
 }
 
@@ -59,7 +59,7 @@ html {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  font-family: "Poppins", sans-serif;
+  font-family: "Mate SC", serif;
 }
 
 body {
@@ -87,6 +87,59 @@ p {
   color: black;
 }
 
+.btnprimary {
+  background-color: black;
+  border: 1.5px solid black;
+  padding: 13px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+.btnprimary .btnlink {
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+  align-items: center;
+  width: 100%;
+}
+.btnprimary:hover {
+  border: 1.5px solid black;
+  background: transparent;
+  transition: all 0.3s;
+  border-radius: 5px;
+}
+.btnprimary:hover .btnlink {
+  color: black;
+  font-weight: bolder;
+}
+
+.btnsecondary {
+  background-color: black;
+  border: 1.5px solid black;
+  padding: 10px 25px;
+  border-radius: 5px;
+  outline: none;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+.btnsecondary .btnlink {
+  text-decoration: none;
+  color: white;
+  font-size: 17px;
+  align-items: center;
+}
+.btnsecondary:hover {
+  border: 1.5px solid black;
+  background: #29B6F6;
+  transition: all 0.3s;
+  border-radius: 5px;
+}
+.btnsecondary:hover .btnlink {
+  color: black;
+  font-weight: lighter;
+}
+
 #navigation-bar .navbar .navcontainer {
   display: flex;
   align-items: center;
@@ -98,7 +151,7 @@ p {
   width: 100%;
 }
 #navigation-bar .navbar {
-  background-color: #29B6F6;
+  background-color: black;
   width: 100%;
   padding: 5px;
   top: 0;
@@ -111,19 +164,25 @@ p {
 }
 #navigation-bar .navbar .navcontainer .logo {
   display: flex;
-  width: 93.16px;
+  width: 100px;
   height: 140px;
-  margin-right: 15px;
+  font-size: 21px;
+  font-weight: bold;
+  margin-right: 60px;
   cursor: pointer;
   align-items: center;
   text-align: center;
 }
 #navigation-bar .navbar .navcontainer .logo h1 {
-  color: black;
+  color: #29B6F6;
+}
+#navigation-bar .navbar .navcontainer:hover {
+  color: white;
+  transition: all 0.3s ease;
 }
 #navigation-bar .navbar .navcontainer .navmenu .navlinks {
-  color: black;
-  font-size: 17px;
+  color: #29B6F6;
+  font-size: 19px;
   font-weight: bold;
   margin-left: 12px;
   padding-left: 10px;
@@ -132,10 +191,21 @@ p {
 }
 #navigation-bar .navbar .navcontainer .navmenu .navlinks:hover {
   color: white;
-  transition: all 0.1s ease-in;
+  transition: all 0.3s ease;
+}
+#navigation-bar .navbar .navcontainer .navmenu .btnprimary {
+  background-color: #29B6F6;
+  margin-left: 22px;
+}
+#navigation-bar .navbar .navcontainer .navmenu .btnprimary:hover {
+  background-color: black;
+  border: 1.5px solid #29B6F6;
+}
+#navigation-bar .navbar .navcontainer .navmenu .btnprimary:hover .btnlink {
+  color: #29B6F6;
 }
 
-.followus-section .followus-container, .products-section .products-container, .vision-section .vision-container, .objectives-section .objectives-container, .intro-section .intro-container {
+.followus-section .followus-container, .vision-section .vision-container, .objectives-section .objectives-container, .intro-section .intro-container {
   display: grid;
   grid-template-columns: 1fr 1fr fit-content(50%);
   align-items: center;
@@ -148,27 +218,31 @@ p {
   overflow: hidden;
 }
 
-.followus-section .followus-container-left, .products-section .products-container-right, .vision-section .vision-container-left, .objectives-section .objectives-container-right, .intro-section .intro-container-left {
+.followus-section .followus-container-left, .vision-section .vision-container-left, .objectives-section .objectives-container-right, .intro-section .intro-container-left {
   width: 100%;
   line-height: 1.2;
 }
-.followus-section .followus-container-left h1, .products-section .products-container-right h1, .vision-section .vision-container-left h1, .objectives-section .objectives-container-right h1, .intro-section .intro-container-left h1 {
+.followus-section .followus-container-left h1, .vision-section .vision-container-left h1, .objectives-section .objectives-container-right h1, .intro-section .intro-container-left h1 {
   line-height: 1.4;
   font-size: 50px;
   padding-bottom: 10px;
 }
-.followus-section .followus-container-left p, .products-section .products-container-right p, .vision-section .vision-container-left p, .objectives-section .objectives-container-right p, .intro-section .intro-container-left p {
+.followus-section .followus-container-left p, .vision-section .vision-container-left p, .objectives-section .objectives-container-right p, .intro-section .intro-container-left p {
   line-height: 1.5;
   font-size: 20px;
   padding-bottom: 15px;
-  color: white;
+  color: black;
 }
 
 .intro-section {
-  background-color: black;
+  background-color: #29B6F6;
 }
 .intro-section .intro-container-left {
   justify-content: center;
+}
+.intro-section .intro-container-left h1, .intro-section .intro-container-left p {
+  color: black;
+  margin-bottom: 10px;
 }
 .intro-section .intro-container-right {
   width: 50%;
@@ -177,18 +251,21 @@ p {
 }
 
 .objectives-section {
-  background-color: #29B6F6;
+  background-color: white;
 }
 .objectives-section .objectives-container-left {
   width: 50%;
   justify-content: right;
 }
-.objectives-section .objectives-container-left .fa-bullseye {
+.objectives-section .objectives-container-left .fa-paper-plane {
   font-size: 200px;
-  color: black;
+  color: #29B6F6;
 }
 .objectives-section .objectives-container-right {
   padding-right: 15px;
+}
+.objectives-section .objectives-container-right h1 {
+  color: black;
 }
 
 .vision-section {
@@ -197,57 +274,37 @@ p {
 .vision-section .vision-container-left {
   justify-content: left;
 }
+.vision-section .vision-container-left h1 {
+  color: white;
+}
 .vision-section .vision-container-right {
   width: 50%;
   justify-content: right;
   padding-left: 45%;
 }
-.vision-section .vision-container-right .fa-search {
+.vision-section .vision-container-right .fa-bullseye {
   font-size: 200px;
   color: #29B6F6;
 }
 
-.products-section {
-  background-color: black;
-}
-.products-section .products-container-left {
-  width: 50%;
-  justify-content: right;
-}
-.products-section .products-container-left .fa-box-open {
-  font-size: 190px;
-  color: #29B6F6;
-}
-.products-section .products-container-right {
-  padding-right: 15px;
-}
-
 .followus-section {
-  background-color: black;
+  background-color: white;
 }
 .followus-section .followus-container-left {
   justify-content: left;
 }
+.followus-section .followus-container-left h1 {
+  color: black;
+  margin-bottom: 10px;
+}
 .followus-section .followus-container-right {
   width: 50%;
   justify-content: right;
+  padding-left: 45%;
 }
 .followus-section .followus-container-right .fa-comment-alt {
   font-size: 200px;
   color: #29B6F6;
-}
-
-.donate-section {
-  background-color: white;
-}
-.donate-section .donate-container {
-  width: 100%;
-  margin: 0 auto;
-  padding: 15px 33.8%;
-  align-items: center;
-  justify-items: center;
-  overflow: hidden;
-  z-index: 999;
 }
 
 .info-section {
@@ -276,7 +333,7 @@ p {
 
 .footer-section {
   padding: 6rem 2rem;
-  background-color: #29B6F6;
+  background-color: black;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -295,13 +352,14 @@ p {
   font-weight: bold;
 }
 .footer-section .footer-info .footer-links a {
-  color: black;
+  color: #29B6F6;
   display: block;
   align-items: center;
 }
 
 .website-rights {
-  background: #29B6F6;
+  background: black;
+  color: #29B6F6;
   padding-top: 15px;
   bottom: 0;
   margin: 0;

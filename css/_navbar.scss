@@ -1,5 +1,6 @@
 @import "colors";
 @import "media";
+@import "buttons";
 
 %align-center {
   display: flex;
@@ -15,7 +16,7 @@
 
   .navbar {
     //position: relative; //sticky maybe //KEEP IT RELATIVE
-    background-color: $blue;
+    background-color: $black;
     width: 100%;
     padding: 5px;
     top: 0;
@@ -29,24 +30,30 @@
 
       .logo {
         display: flex;
-        width: 93.16px;
+        width: 100px;
         height: 140px;
-        margin-right: 15px;
-        //image-resolution: normal;
+        font-size: 21px;
+        font-weight: bold;
+        margin-right: 60px;
         cursor: pointer;
         align-items: center;
         text-align: center;
 
         h1 {
-          color: $black;
+          color: $blue;
         }
+      }
+
+      &:hover {
+        color: $white;
+        transition: all 0.3s ease;
       }
 
       .navmenu {
 
         .navlinks {
-          color: $black;
-          font-size: 17px;
+          color: $blue;
+          font-size: 19px;
           font-weight: bold;
           margin-left: 12px;
           padding-left: 10px;
@@ -55,7 +62,21 @@
 
           &:hover {
             color: $white;
-            transition: all 0.1s ease-in;
+            transition: all 0.3s ease;
+          }
+        }
+
+        .btnprimary {
+          background-color: $blue;
+          margin-left: 22px;
+          //padding-left: 10px;
+          &:hover {
+            background-color: $black;
+            border: 1.5px solid $blue;
+
+            .btnlink {
+              color: $blue;
+            }
           }
         }
       }
